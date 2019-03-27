@@ -6,6 +6,7 @@ import Home from './components/UI/Home';
 import PageNotFound from './components/UI/PageNotFound';
 import Popular from './components/popular/Popular';
 import Battle from './components/battle/Battle';
+import Result from './components/result/Result'; 
 
 class App extends Component {
   render() {
@@ -17,7 +18,7 @@ class App extends Component {
             <Route path="/" exact={true} component={Home} />
              <Route path="/battle" component={Battle} />
             <Route path="/popular" component={Popular} />
-            {/* <Route path="/result" component={Result} />  */}
+            <Route path="/result" component={Result} /> 
             <Route component={PageNotFound} />
         </Switch>
         </div>

@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
+import PlayerList from '../../containers/PlayerList';
 
 export default class Battle extends Component {
   render() {
     return (
-      <div>
-        This is Battle component
-      </div>
+      <React.Fragment>
+        <PlayerList />
+      </React.Fragment>
     )
   }
 }
