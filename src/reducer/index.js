@@ -1,8 +1,7 @@
-const initialState = [];
+import {combineReducers} from 'redux';
+import popularReducer from '../reducer/popularReducer';
 
-export default function rootReducer(state = initialState, action) {
-    switch (action.type) {
-        default:
-            return state
-    }
-}
+const rootReducer = combineReducers({
+    popularReducer
+})
+export default rootReducer;
